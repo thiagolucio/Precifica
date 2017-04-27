@@ -1,0 +1,51 @@
+body { background-color: #3fb0b6; }
+.logo img {
+  width: 40%;
+  height: auto;
+  text-align: center;
+}
+.btn-warning { background-color: #e34400; }
+.text-white { color: #ffffff; }
+.red { color: #ff0000; }
+.blue { color: #226296; }
+.padding50 { padding: 50px; }
+.mtop5p { margin-top: 5%; }
+.mtop10p { margin-top: 10%; }
+.title{font-size: 16px;}
+.logarRedesSociais {
+  text-align: left;
+  margin-top: 20px;
+}
+.btn:hover{transition: all 0.5s ease-in-out;}
+.logarRedesSociais >div {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.logarRedesSociais >div:hover {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+.centered-horizontal {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  align-items: center;
+  -webkit-align-items: center;
+  text-align: center;
+}
+
+/*centralizacao absoluta*/
+.centered-absolute {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  -webkit-align-items: center;
+}
+.fieldset {background: #333!important;}
+.footer-home{text-align: center; margin-top: 60px;}

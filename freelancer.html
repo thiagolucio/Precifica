@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--PRAZO DE ENTREGA 29 de Abril -->
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Palavras chave separadas por virgulas" />
+        <meta name="description" content="Texto resumido aparecera nos resultados de busca atalhos" />
+        <meta name="author" content="Nome do autor">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <title>PRECIFICA HAH !</title>
+        <!-- Bootstrap CSS -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- JQuery 1 e 2 and 3 -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+        <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/c3e7b18c76.js"></script>
+        <!-- CSS Personalizado -->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    </head>
+    <body>
+        <div class="container text-white">
+            <h2><i class="fa fa-black-tie"></i> Você é um FreeLancer!</h2>
+            <div class="title">
+                <p>Você deseja pegar este trabalho certo? Mas não está seguro ou só quer dar uma conferia se seu preço vai se enquadrar na faixa dos seus concorrentes e não ficar naquele valor que não compensa nem sair da cadeira né...</p>
+                <p>Então, escolha o tipo de serviço que deseja fazer, ou pelo menos que mais se aproxime dele e coloca o preço REAL que você REALMENTE deseja cobrar para que seja calculado com a média praticada por outros profissionais como você e saber se seu
+                preço está dentro da realidade.</p>
+            </div>
+            <form class="form-horizontal mtop5p">
+                <fieldset>
+                    <legend class="text-white">Escolha o seu perfil de Serviço desejado</legend>
+                    <div class="form-group">
+                        <label for="selecServico" class="col-md-12">Escolha o tipo de Serviço:</label>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <select class="form-control selectpicker" id="selecServico" data-style="btn-warning">
+                                    <option value="valueInstitucional">Site Institucional (Para seu negócio, até 10 links de menu)</option>
+                                    <option value="valueServicos">Site de Serviços (Para seu negócio, até 20 links de menu com funcionalidades básicas)</option>
+                                    <option value="valueEcommerce1">E-commerce (Negócios Online, pequeno porte, com integração para pagamentos)</option>
+                                    <option value="valueEcommerce2">E-commerce (Negócios Online, médio porte, com integração para pagamentos)</option>
+                                    <option value="valueBlog">Blog (sem limite de links para profissionais autônomos e afins)</option>
+                                </select>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Digite o valor que deseja pagar pelo serviço descrito por você acima. Lembre-se de colocar o valor desejado real pois somente assim o valor indicado será real e você poderá ter uma noção real do preço correto para negociar com
+                            o profissional que for lhe prestar este serviço.</p>
+                            <div class="input-group col-md-7">
+                                <span class="input-group-addon"><i class="fa fa-money fa-lg"></i></span>
+                                    <input type="text" id="precoFreelancer" class="form-control">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-default" onclick="calculaFreela();" type="button">Calcular</button>
+                                </span>
+                            </div>
+                            <input type="text" id="valorMedia" />
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/jquery.maskMoney.min.js"></script>
+    </body>
+</html>
