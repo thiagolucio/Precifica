@@ -29,6 +29,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
         <!-- Font Awesome -->
         <script src="https://use.fontawesome.com/c3e7b18c76.js"></script>
+                <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/jquery.maskMoney.min.js"></script>
         <!-- CSS Personalizado -->
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
     </head>
@@ -40,7 +42,7 @@
                 <p>Então, escolha o tipo de serviço que deseja fazer, ou pelo menos que mais se aproxime dele e coloca o preço REAL que você REALMENTE deseja cobrar para que seja calculado com a média praticada por outros profissionais como você e saber se seu
                 preço está dentro da realidade.</p>
             </div>
-            <form class="form-horizontal mtop5p">
+            <form class="form-horizontal mtop5p" method="post">
                 <fieldset>
                     <legend class="text-white">Escolha o seu perfil de Serviço desejado</legend>
                     <div class="form-group">
@@ -64,16 +66,15 @@
                                 <span class="input-group-addon"><i class="fa fa-money fa-lg"></i></span>
                                     <input type="text" id="precoFreelancer" class="form-control">
                                     <span class="input-group-btn">
-                                    <button class="btn btn-default" onclick="calculaFreela();" type="button">Calcular</button>
+                                    <!-- <button type="button" class="btn btn-default" onclick="javascript:calculoValor();" value="">Calcular</button> -->
+                                    <a href="resultadoInstitucional.html" target="_blank" type="button" class="btn btn-default"  value="">Calcular</a>
                                 </span>
                             </div>
-                            <input type="text" id="valorMedia" />
+                            <!-- <input type="text" id="txtValorMediaFreela" value="" readonly/> -->
                         </div>
                     </div>
                 </fieldset>
             </form>
         </div>
-        <script type="text/javascript" src="js/scripts.js"></script>
-        <script type="text/javascript" src="js/jquery.maskMoney.min.js"></script>
     </body>
 </html>

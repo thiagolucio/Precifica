@@ -21,29 +21,41 @@ $(function() {
     });
 });
 
-$('input').on('change', function() {
-  var $precoFreelancer = $("#precoFreelancer");
-  var $precoCliente = $("#precoCliente");
-  // var $valorMedia = $("#valorMedia");
-  var $valorMedia = 1500;
+// $('input').on('change', function() {
+//   var $precoFreelancer = $("#precoFreelancer");
+//   var $precoCliente = $("#precoCliente");
+//   // var $valorMedia = $("#valorMedia");
+//   var $valorMedia = 1500;
 
-  if ($precoFreelancer.val() == '')
-    return limparMedia();
+//   if ($precoFreelancer.val() == '')
+//     return limparMedia();
 
-  if ($precoCliente.val() == '')
-    return limparMedia();
+//   if ($precoCliente.val() == '')
+//     return limparMedia();
 
-  var precoFreelancer = parseFloat($precoFreelancer.val());
-  var precoCliente = parseFloat($precoCliente.val());
+//   var precoFreelancer = parseFloat($precoFreelancer.val());
+//   var precoCliente = parseFloat($precoCliente.val());
 
-  var mediaFreelancer = (precoFreelancer + valorMedia) / 2;
-  var mediaCliente = (precoCliente + valorMedia) / 2;
+//   var mediaFreelancer = (precoFreelancer + valorMedia) / 2;
+//   var mediaCliente = (precoCliente + valorMedia) / 2;
 
-  $valorMedia.val(media)
-});
+//   $valorMedia.val(media)
+// });
 
-function limparMedia() {
-  var $valorMedia = $("#precoMedia");
-  $valorMedia.val('');
-  return false;
+// function limparMedia() {
+//   var $valorMedia = $("#precoMedia");
+//   $valorMedia.val('');
+//   return false;
+// }
+
+function calculoValor() {
+  precoMedioServico = 1500;
+  var precoFreela = parseFloat(document.getElementById('#precoFreelancer').value);
+    console.log(value);
+  var precoCliente = parseFloat(document.getElementById('#precoCliente').value);
+
+  //Para valor de media freela - caso 1 Apenas - Sites Institucionais
+  var valorMediaFreela = parseFloat((precoFreela + precoMedioServico)/2);
+
+  document.getElementById('txtValorMediaFreela').setAtribute("value", valorMediaFreela);
 }
